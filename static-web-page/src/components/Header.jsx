@@ -1,15 +1,16 @@
+import logo from "../assets/writing.png";
+
 const Header = () => {
   return (
-    <nav className="navbar">
-      <div className="logo">writings.dev</div>
-      <div className="menu">
-        <ul className="list">
-          <li>categories</li>
-          <li>articles</li>
-          <li>about</li>
-        </ul>
+    <>
+      <div className="header-container">
+        <img src={logo} alt="writing logo" className="logo" />
+        <h2 className="title">Writings for Developers</h2>
+        <p className="desc">
+          Curated collection of articles for busy developers
+        </p>
       </div>
-    </nav>
+    </>
   );
 };
 

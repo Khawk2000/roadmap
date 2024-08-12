@@ -5,18 +5,18 @@
   text-align: center;
 }
 
-.logo {
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.brand {
   padding-top: 15px;
   font-size: 18px;
-  will-change: filter;
-  transition: filter 300ms;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
+
 
 .navbar {
   height: 100px;
@@ -33,4 +33,78 @@
 
 .list li {
   padding-left: 10px;
+}
+
+.logo {
+  height: 200px;
+  padding-top: 15px;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.title {
+  color: #f58a97;
+  font-family: "Rajdhani", sans-serif;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+.desc {
+  margin-top: 5px;
+}
+
+.categories-container{
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.4;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+.tag-list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.tag {
+  padding-left: 10px;
+}
+
+.footer-container {
+  margin-top: auto;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.footer-brand {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.left-footer {
+  display: flex;
+}
+
+.blue-box {
+  border-radius: 5px;
+  padding: 2px 3px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(39, 157, 204);
+  text-decoration: none;
+}
+
+.blue-box:hover {
+  color: white;
 }
