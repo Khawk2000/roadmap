@@ -1,4 +1,5 @@
 import "./App.css";
+import Cards from "./components/Cards";
 import Categories from "./components/Categories";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
@@ -11,6 +12,7 @@ function App() {
       <div className="app-container">
         <Header />
         <Categories />
+        <Cards />
       </div>
       <Footer />
     </>
