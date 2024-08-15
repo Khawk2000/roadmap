@@ -68,7 +68,7 @@ body {
 }
 
 .search-container {
-  padding-top: 20px;
+  padding-top: 50px;
 }
 
 .search-box {
@@ -85,4 +85,38 @@ body {
 .search-box:focus {
   border-color: #5588ff;
   outline: #5588ff;
+}
+
+.profiles-container {
+  padding-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profiles-list {
+  display: grid;
+  width: 80%;
+}
+
+@media (min-width: 500px){
+  .profiles-list{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 800px){
+  .profiles-list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1100px){
+  .profiles-list{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 1400px){
+  .profiles-list{
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
