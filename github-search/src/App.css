@@ -95,28 +95,64 @@ body {
   align-items: center;
 }
 
-.profiles-list {
-  display: grid;
-  width: 80%;
+.profile-card {
+  width: 70%;
+  background-color: #010409;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (min-width: 500px){
-  .profiles-list{
-    grid-template-columns: repeat(1, 1fr);
-  }
+.pfp {
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 40px;
 }
-@media (min-width: 800px){
-  .profiles-list{
-    grid-template-columns: repeat(2, 1fr);
-  }
+
+.card-header {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+  padding-top: 20px;
 }
-@media (min-width: 1100px){
-  .profiles-list{
-    grid-template-columns: repeat(3, 1fr);
-  }
+
+.card-body {
+  width: 80%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
 }
-@media (min-width: 1400px){
-  .profiles-list{
-    grid-template-columns: repeat(4, 1fr);
-  }
+
+.card-bio {
+  width: 60%;
 }
+
+.card-stats {
+  font-size: 12px;
+  width: 35%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stat {
+  background-color: #5588ff;
+  padding: 4px;
+  height: 12px;
+  border-radius: 2px; 
+}
+
+.card-footer {
+  padding-top: 30px;
+}
+
+.links {
+  list-style: none;
+  display: flex;
+}
+
+.link {
+  padding: 0 10px;
+}
+
